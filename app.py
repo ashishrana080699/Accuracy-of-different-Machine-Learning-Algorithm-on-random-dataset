@@ -29,8 +29,6 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-
-
 app = Flask(__name__)
 Bootstrap(app)
 db = SQLAlchemy(app)
@@ -123,9 +121,6 @@ def dataupload():
 		fullfile = fullfile,
 		dfplot = df
 		)
-
-
-
 
 if __name__ == '__main__':
 	app.run(debug=True)
